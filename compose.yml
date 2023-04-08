@@ -1,5 +1,12 @@
 version: '3'
 services:
+  svelte-install:
+    tty: true
+    build:
+      context: ./i-wanna-wiki-front
+      dockerfile: ../.image/install.Dockerfile
+    volumes:
+      - ./i-wanna-wiki-front:/app
   web:
     build:
       context: ./i-wanna-wiki-front
