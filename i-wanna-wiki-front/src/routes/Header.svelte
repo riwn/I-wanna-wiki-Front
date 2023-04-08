@@ -14,7 +14,10 @@
 	<nav>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Submit</a>
+				<a href="/">Home</a>
+			</li>
+			<!-- <li aria-current={$page.url.pathname === '/submit' ? 'page' : undefined}>
+				<a href="/submit">Submit</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/game' ? 'page' : undefined}>
 				<a href="/game">List</a>
@@ -24,7 +27,7 @@
 			</li>
 			<li aria-current={$page.url.pathname === '/game/search' ? 'page' : undefined}>
 				<a href="/game/search">Search</a>
-			</li>
+			</li> -->
 		</ul>
 	</nav>
 
@@ -61,16 +64,6 @@
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
 	}
 
 	ul {
