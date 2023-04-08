@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./i-wanna-wiki-front
+      dockerfile: ../.image/Dockerfile
+    tty: true
+    environment:
+      - NODE_ENV=development
+      - PORT=5173
+    volumes:
+      - ./i-wanna-wiki-front:/app
